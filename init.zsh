@@ -7,7 +7,7 @@
 ######################################################################
 p6df::modules::macosx::deps() {
   ModuleDeps=(
-    p6m7g8/p6macosx
+    p6m7g8-dotfiles/p6macosx
   )
 }
 
