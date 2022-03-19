@@ -67,8 +67,6 @@ p6df::modules::macosx::external::brew() {
 ######################################################################
 p6df::modules::macosx::home::symlink() {
 
-  echo ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-macosx/share/.cups .
-  echo ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-macosx/share/.hosts .
-#  ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-macosx/share/.cups .
-#  ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-macosx/share/.hosts .
+  ln -fs $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.cups .
+  ln -fs $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.hosts .
 }
