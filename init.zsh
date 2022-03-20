@@ -33,7 +33,6 @@ p6df::modules::macosx::external::brew() {
 
   ## Google
   brew install --cask google-chrome
-  brew install --cask google-hangouts
 
   ## Mac
   brew install --cask alfred
