@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 ######################################################################
 #<
 #
@@ -58,6 +59,8 @@ p6df::modules::macosx::external::brew() {
   #  brew install --cask virtualbox
   #  brew install --cask vmware-fusion
   brew install --cask wireshark
+
+  p6_return_Void
 }
 
 ######################################################################
@@ -65,6 +68,7 @@ p6df::modules::macosx::external::brew() {
 #
 # Function: p6df::modules::macosx::home::symlink()
 #
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
 p6df::modules::macosx::home::symlink() {
@@ -73,4 +77,6 @@ p6df::modules::macosx::home::symlink() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.ssh" ".ssh"
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.hosts" ".ssh/.hosts"
+
+  p6_return_void
 }
