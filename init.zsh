@@ -21,8 +21,8 @@ p6df::modules::macosx::deps() {
 ######################################################################
 p6df::modules::macosx::external::brew() {
 
-  brew tap homebrew/cask
   brew tap homebrew/cask-versions
+  brew tap homebrew/services
 
   ## Remote Desktop Compat
   brew install --cask xquartz
@@ -51,7 +51,6 @@ p6df::modules::macosx::external::brew() {
   brew install --cask brave-browser
   brew install --cask firefox
   brew install --cask gitx
-  brew install --cask gitter
 
   brew install --cask slack
   brew install --cask squidman
