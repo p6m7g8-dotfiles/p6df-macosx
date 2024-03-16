@@ -1,0 +1,9 @@
+# host				bg		fg
+BastionHost			lgreen		white
+PrivateHost			lblue		white
+arkestro-dev			dgreen		white
+arkestro-qa			purple		white
+arkestro-stage			dblue		white
+arkestro-staging		dblue		white
+arkestro-sandbox		orange		white
+arkestro-prod			red		white
