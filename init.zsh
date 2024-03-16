@@ -8,6 +8,7 @@
 ######################################################################
 p6df::modules::macosx::deps() {
   ModuleDeps=(
+    p6m7g8-dotfiles/p6df-alfred
     p6m7g8-dotfiles/p6macosx
   )
 }
@@ -36,7 +37,6 @@ p6df::modules::macosx::external::brew() {
   brew install --cask google-chrome
 
   ## Mac
-  brew install --cask alfred
   brew install --cask dash
   brew install --cask iterm2
   brew install --cask skitch
