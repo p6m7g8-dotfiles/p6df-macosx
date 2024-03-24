@@ -26,40 +26,75 @@ p6df::modules::macosx::external::brew() {
   brew tap homebrew/services
 
   ## Remote Desktop Compat
-  brew install --cask xquartz
-  brew install freerdp
+  p6df::modules::homebrew::cli::brew::install --cask xquartz
+  p6df::modules::homebrew::cli::brew::install freerdp
 
   ## Amazon
-  brew install --cask amazon-workspaces
-  brew install --cask amazon-chime
+  p6df::modules::homebrew::cli::brew::install --cask amazon-workspaces
+  p6df::modules::homebrew::cli::brew::install --cask amazon-chime
 
   ## Google
-  brew install --cask google-chrome
+  p6df::modules::homebrew::cli::brew::install --cask google-chrome
 
   ## Mac
-  brew install --cask dash
-  brew install --cask iterm2
-  brew install --cask skitch
+  p6df::modules::homebrew::cli::brew::install --cask dash
+  p6df::modules::homebrew::cli::brew::install --cask iterm2
+  p6df::modules::homebrew::cli::brew::install --cask skitch
 
   # A/V
-  brew install --cask vlc
-  brew install --cask screenflow
+  p6df::modules::homebrew::cli::brew::install --cask vlc
+  p6df::modules::homebrew::cli::brew::install --cask screenflow
 
   ## Other
-  brew install --cask bartender
-  brew install --cask dropbox
-  brew install --cask brave-browser
-  brew install --cask firefox
-  brew install --cask gitx
+  p6df::modules::homebrew::cli::brew::install --cask bartender
+  p6df::modules::homebrew::cli::brew::install --cask dropbox
+  p6df::modules::homebrew::cli::brew::install --cask brave-browser
+  p6df::modules::homebrew::cli::brew::install --cask firefox
+  p6df::modules::homebrew::cli::brew::install --cask gitx
 
-  brew install --cask slack
-  brew install --cask squidman
-  #  brew install --cask vagrant
-  #  brew install --cask virtualbox
-  #  brew install --cask vmware-fusion
-  brew install --cask wireshark
+  p6df::modules::homebrew::cli::brew::install --cask slack
+  p6df::modules::homebrew::cli::brew::install --cask squidman
+  #  p6df::modules::homebrew::cli::brew::install --cask vagrant
+  #  p6df::modules::homebrew::cli::brew::install --cask virtualbox
+  #  p6df::modules::homebrew::cli::brew::install --cask vmware-fusion
+  p6df::modules::homebrew::cli::brew::install --cask wireshark
 
-  p6_return_Void
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::macosx::langs()
+#
+#>
+######################################################################
+p6df::modules::macosx::langs() {
+
+  pip install iterm2
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::macosx::init(_module, dir)
+#
+#  Args:
+#	_module -
+#	dir -
+#
+#>
+######################################################################
+p6df::modules::macosx::init() {
+  local _module="$1"
+  local dir="$2"
+  
+  p6_file_load "$dir/share/.iterm2_shell_integration.zsh"
+  p6_path_if "$dir/share/.iterm2"
+  
+  p6_return_void
 }
 
 ######################################################################
@@ -73,9 +108,7 @@ p6df::modules::macosx::external::brew() {
 p6df::modules::macosx::home::symlink() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.cups" ".cups"
-
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.ssh" ".ssh"
-  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.hosts" ".ssh/.hosts"
 
   p6_return_void
 }
