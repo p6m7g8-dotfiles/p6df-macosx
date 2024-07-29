@@ -22,7 +22,6 @@ p6df::modules::macosx::deps() {
 ######################################################################
 p6df::modules::macosx::external::brew() {
 
-  brew tap homebrew/cask-versions
   brew tap homebrew/services
 
   ## Remote Desktop Compat
@@ -39,7 +38,7 @@ p6df::modules::macosx::external::brew() {
   ## Mac
   p6df::modules::homebrew::cli::brew::install --cask dash
   p6df::modules::homebrew::cli::brew::install --cask iterm2
-  p6df::modules::homebrew::cli::brew::install --cask skitch
+  p6df::modules::homebrew::cli::brew::install --cask shottr
 
   # A/V
   p6df::modules::homebrew::cli::brew::install --cask vlc
