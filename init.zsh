@@ -43,6 +43,7 @@ p6df::modules::macosx::external::brew() {
   # A/V
   p6df::modules::homebrew::cli::brew::install --cask vlc
   p6df::modules::homebrew::cli::brew::install --cask screenflow
+  p6df::modules::homebrew::cli::brew::install --cask zoom
 
   ## Other
   p6df::modules::homebrew::cli::brew::install --cask bartender
