@@ -22,8 +22,6 @@ p6df::modules::macosx::deps() {
 ######################################################################
 p6df::modules::macosx::external::brew() {
 
-  brew tap homebrew/services
-
   ## Remote Desktop Compat
   p6df::modules::homebrew::cli::brew::install --cask xquartz
   p6df::modules::homebrew::cli::brew::install freerdp
@@ -32,8 +30,10 @@ p6df::modules::macosx::external::brew() {
   p6df::modules::homebrew::cli::brew::install --cask amazon-workspaces
   p6df::modules::homebrew::cli::brew::install --cask amazon-chime
 
-  ## Google
+  ## Browsers
   p6df::modules::homebrew::cli::brew::install --cask google-chrome
+  p6df::modules::homebrew::cli::brew::install --cask brave-browser
+  p6df::modules::homebrew::cli::brew::install --cask firefox
 
   ## Mac
   p6df::modules::homebrew::cli::brew::install --cask dash
@@ -48,8 +48,6 @@ p6df::modules::macosx::external::brew() {
   ## Other
   p6df::modules::homebrew::cli::brew::install --cask bartender
   p6df::modules::homebrew::cli::brew::install --cask dropbox
-  p6df::modules::homebrew::cli::brew::install --cask brave-browser
-  p6df::modules::homebrew::cli::brew::install --cask firefox
   p6df::modules::homebrew::cli::brew::install --cask gitx
 
   p6df::modules::homebrew::cli::brew::install --cask slack
