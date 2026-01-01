@@ -36,25 +36,25 @@ p6df::modules::macosx::external::brew() {
   p6df::modules::homebrew::cli::brew::install --cask firefox
 
   ## Mac
-  p6df::modules::homebrew::cli::brew::install --cask dash
+#  p6df::modules::homebrew::cli::brew::install --cask dash
   p6df::modules::homebrew::cli::brew::install --cask iterm2
   p6df::modules::homebrew::cli::brew::install --cask shottr
 
   # A/V
-  p6df::modules::homebrew::cli::brew::install --cask vlc
+#  p6df::modules::homebrew::cli::brew::install --cask vlc
   p6df::modules::homebrew::cli::brew::install --cask screenflow
   p6df::modules::homebrew::cli::brew::install --cask zoom
 
   ## Other
-  p6df::modules::homebrew::cli::brew::install --cask bartender
-  p6df::modules::homebrew::cli::brew::install --cask dropbox
-  p6df::modules::homebrew::cli::brew::install --cask gitx
+#  p6df::modules::homebrew::cli::brew::install --cask bartender
+#  p6df::modules::homebrew::cli::brew::install --cask dropbox
+#  p6df::modules::homebrew::cli::brew::install --cask gitx
 
   p6df::modules::homebrew::cli::brew::install --cask slack
-  p6df::modules::homebrew::cli::brew::install --cask squidman
-  #  p6df::modules::homebrew::cli::brew::install --cask vagrant
-  #  p6df::modules::homebrew::cli::brew::install --cask virtualbox
-  #  p6df::modules::homebrew::cli::brew::install --cask vmware-fusion
+#  p6df::modules::homebrew::cli::brew::install --cask squidman
+#  p6df::modules::homebrew::cli::brew::install --cask vagrant
+#  p6df::modules::homebrew::cli::brew::install --cask virtualbox
+#  p6df::modules::homebrew::cli::brew::install --cask vmware-fusion
   p6df::modules::homebrew::cli::brew::install --cask wireshark
 
   p6_return_void
