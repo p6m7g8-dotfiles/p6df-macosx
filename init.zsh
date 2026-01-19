@@ -69,7 +69,7 @@ p6df::modules::macosx::external::brew() {
 ######################################################################
 p6df::modules::macosx::langs() {
 
-#  pip install iterm2 # TODO: conver to uv
+#  pip install iterm2 # TODO: convert to uv
 
   p6_return_void
 }
@@ -88,10 +88,10 @@ p6df::modules::macosx::langs() {
 p6df::modules::macosx::init() {
   local _module="$1"
   local dir="$2"
-  
+
   p6_file_load "$dir/share/.iterm2_shell_integration.zsh"
   p6_path_if "$dir/share/.iterm2"
-  
+
   p6_return_void
 }
 
