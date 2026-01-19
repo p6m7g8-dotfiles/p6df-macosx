@@ -12,4 +12,4 @@ jobs:
         uses: p6m7g8-actions/p6df-build@main
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
-          shellcheck_ignore_paths: p6df-macosx/share/.iterm*
+          shellcheck_ignore_paths: share/.iterm*
