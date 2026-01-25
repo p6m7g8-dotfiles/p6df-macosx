@@ -23,39 +23,39 @@ p6df::modules::macosx::deps() {
 p6df::modules::macosx::external::brew() {
 
   ## Remote Desktop Compat
-  p6df::modules::homebrew::cli::brew::install --cask xquartz
-  p6df::modules::homebrew::cli::brew::install freerdp
+  p6df::core::homebrew::cli::brew::install --cask xquartz
+  p6df::core::homebrew::cli::brew::install freerdp
 
   ## Amazon
-  p6df::modules::homebrew::cli::brew::install --cask amazon-workspaces
-  p6df::modules::homebrew::cli::brew::install --cask amazon-chime
+  p6df::core::homebrew::cli::brew::install --cask amazon-workspaces
+  p6df::core::homebrew::cli::brew::install --cask amazon-chime
 
   ## Browsers
-  p6df::modules::homebrew::cli::brew::install --cask google-chrome
-  p6df::modules::homebrew::cli::brew::install --cask brave-browser
-  p6df::modules::homebrew::cli::brew::install --cask firefox
+  p6df::core::homebrew::cli::brew::install --cask google-chrome
+  p6df::core::homebrew::cli::brew::install --cask brave-browser
+  p6df::core::homebrew::cli::brew::install --cask firefox
 
   ## Mac
-#  p6df::modules::homebrew::cli::brew::install --cask dash
-  p6df::modules::homebrew::cli::brew::install --cask iterm2
-  p6df::modules::homebrew::cli::brew::install --cask shottr
+#  p6df::core::homebrew::cli::brew::install --cask dash
+  p6df::core::homebrew::cli::brew::install --cask iterm2
+  p6df::core::homebrew::cli::brew::install --cask shottr
 
   # A/V
-#  p6df::modules::homebrew::cli::brew::install --cask vlc
-  p6df::modules::homebrew::cli::brew::install --cask screenflow
-  p6df::modules::homebrew::cli::brew::install --cask zoom
+#  p6df::core::homebrew::cli::brew::install --cask vlc
+  p6df::core::homebrew::cli::brew::install --cask screenflow
+  p6df::core::homebrew::cli::brew::install --cask zoom
 
   ## Other
-#  p6df::modules::homebrew::cli::brew::install --cask bartender
-#  p6df::modules::homebrew::cli::brew::install --cask dropbox
-#  p6df::modules::homebrew::cli::brew::install --cask gitx
+#  p6df::core::homebrew::cli::brew::install --cask bartender
+#  p6df::core::homebrew::cli::brew::install --cask dropbox
+#  p6df::core::homebrew::cli::brew::install --cask gitx
 
-  p6df::modules::homebrew::cli::brew::install --cask slack
-#  p6df::modules::homebrew::cli::brew::install --cask squidman
-#  p6df::modules::homebrew::cli::brew::install --cask vagrant
-#  p6df::modules::homebrew::cli::brew::install --cask virtualbox
-#  p6df::modules::homebrew::cli::brew::install --cask vmware-fusion
-  p6df::modules::homebrew::cli::brew::install --cask wireshark
+  p6df::core::homebrew::cli::brew::install --cask slack
+#  p6df::core::homebrew::cli::brew::install --cask squidman
+#  p6df::core::homebrew::cli::brew::install --cask vagrant
+#  p6df::core::homebrew::cli::brew::install --cask virtualbox
+#  p6df::core::homebrew::cli::brew::install --cask vmware-fusion
+  p6df::core::homebrew::cli::brew::install --cask wireshark
 
   p6_return_void
 }
