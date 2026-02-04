@@ -39,6 +39,9 @@ TODO: Add a short summary of this module.
 - `p6df::modules::macosx::external::brew()`
 - `p6df::modules::macosx::home::symlink()`
 - `p6df::modules::macosx::init(_module, dir)`
+  - Args:
+    - _module - 
+    - dir - 
 - `p6df::modules::macosx::langs()`
 
 ## Hierarchy
