@@ -50,7 +50,7 @@ p6df::modules::macosx::external::brew() {
 #  p6df::core::homebrew::cli::brew::install --cask dropbox
 #  p6df::core::homebrew::cli::brew::install --cask gitx
 
-  p6df::core::homebrew::cli::brew::install --cask slack
+#  p6df::core::homebrew::cli::brew::install --cask slack
 #  p6df::core::homebrew::cli::brew::install --cask squidman
 #  p6df::core::homebrew::cli::brew::install --cask vagrant
 #  p6df::core::homebrew::cli::brew::install --cask virtualbox
@@ -105,8 +105,8 @@ p6df::modules::macosx::init() {
 ######################################################################
 p6df::modules::macosx::home::symlink() {
 
-  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.cups" ".cups"
-  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.ssh" ".ssh"
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.cups" "$HOME/.cups"
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.ssh" "$HOME/.ssh"
 
   p6_return_void
 }
