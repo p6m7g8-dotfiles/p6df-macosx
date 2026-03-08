@@ -9,6 +9,7 @@
 p6df::modules::macosx::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6df-alfred
+    p6m7g8-dotfiles/p6df-zoom
     p6m7g8-dotfiles/p6macosx
   )
 }
@@ -43,8 +44,6 @@ p6df::modules::macosx::external::brew() {
   # A/V
 #  p6df::core::homebrew::cli::brew::install --cask vlc
   p6df::core::homebrew::cli::brew::install --cask screenflow
-  p6df::core::homebrew::cli::brew::install --cask zoom
-
   ## Other
 #  p6df::core::homebrew::cli::brew::install --cask bartender
 #  p6df::core::homebrew::cli::brew::install --cask dropbox
@@ -100,7 +99,7 @@ p6df::modules::macosx::init() {
 #
 # Function: p6df::modules::macosx::home::symlink()
 #
-#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
+#  Environment:	 HOME P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
 p6df::modules::macosx::home::symlink() {

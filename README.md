@@ -17,7 +17,8 @@
 
 ## Summary
 
-TODO: Add a short summary of this module.
+p6df module for macOS: Homebrew casks, system defaults, and macOS-specific
+tooling. Zoom moved to p6df-zoom module.
 
 ## Contributing
 
@@ -40,8 +41,8 @@ TODO: Add a short summary of this module.
 - `p6df::modules::macosx::home::symlink()`
 - `p6df::modules::macosx::init(_module, dir)`
   - Args:
-    - _module -
-    - dir -
+    - _module
+    - dir
 - `p6df::modules::macosx::langs()`
 
 ## Hierarchy
