@@ -68,7 +68,7 @@ p6df::modules::macosx::external::brew() {
 ######################################################################
 p6df::modules::macosx::langs() {
 
-#  pip install iterm2 # TODO: convert to uv
+  uv pip install iterm2
 
   p6_return_void
 }
