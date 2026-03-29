@@ -17,11 +17,11 @@ p6df::modules::macosx::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::macosx::external::brew()
+# Function: p6df::modules::macosx::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::macosx::external::brew() {
+p6df::modules::macosx::external::brews() {
 
   ## Remote Desktop Compat
   p6df::core::homebrew::cli::brew::install --cask xquartz
