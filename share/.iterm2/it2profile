@@ -158,7 +158,7 @@ case "$1" in
             show_help
             exit 1
         }
-        set_profile "${ITERM_PROFILE:-}"
+        set_profile "$ITERM_PROFILE"
         ;;
     *)
         error "Unknown option: $1"
