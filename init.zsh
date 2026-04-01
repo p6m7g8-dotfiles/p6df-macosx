@@ -141,6 +141,6 @@ p6df::modules::macosx::home::symlinks() {
 ######################################################################
 p6df::modules::macosx::profile::mod() {
 
-  p6_return_words 'macosx' '$MACOSX_DEPLOYMENT_TARGET'
+  p6_return_words 'macosx' "$"
 }
 
