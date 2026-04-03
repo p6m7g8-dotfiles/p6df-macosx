@@ -82,9 +82,9 @@ p6df::modules::macosx::langs() {
 #>
 ######################################################################
 p6df::modules::macosx::path::init() {
-
   local _module="$1"
   local _dir="$2"
+
   p6_path_if "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.iterm2"
 
   p6_return_void
@@ -127,20 +127,3 @@ p6df::modules::macosx::home::symlinks() {
 
   p6_return_void
 }
-
-######################################################################
-#<
-#
-# Function: words macosx $MACOSX_DEPLOYMENT_TARGET = p6df::modules::macosx::profile::mod()
-#
-#  Returns:
-#	words - macosx $MACOSX_DEPLOYMENT_TARGET
-#
-#  Environment:	 MACOSX_DEPLOYMENT_TARGET
-#>
-######################################################################
-p6df::modules::macosx::profile::mod() {
-
-  p6_return_words 'macosx' "$"
-}
-
