@@ -1,5 +1,11 @@
 # shellcheck shell=bash
 ######################################################################
+#<
+#
+# Function: p6df::modules::macosx::deps()
+#
+#>
+######################################################################
 p6df::modules::macosx::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6df-alfred
@@ -8,6 +14,16 @@ p6df::modules::macosx::deps() {
   )
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::macosx::init(_module, dir)
+#
+#  Args:
+#	_module -
+#	dir -
+#
+#>
 ######################################################################
 p6df::modules::macosx::init() {
   local _module="$1"
@@ -19,6 +35,13 @@ p6df::modules::macosx::init() {
 }
 
 ######################################################################
+#<
+#
+# Function: p6df::modules::macosx::path::init()
+#
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
+#>
+######################################################################
 p6df::modules::macosx::path::init() {
   local _module="$1"
   local _dir="$2"
@@ -29,6 +52,13 @@ p6df::modules::macosx::path::init() {
 }
 
 ######################################################################
+#<
+#
+# Function: p6df::modules::macosx::home::symlinks()
+#
+#  Environment:	 HOME P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
+#>
+######################################################################
 p6df::modules::macosx::home::symlinks() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-macosx/share/.cups" "$HOME/.cups"
@@ -38,6 +68,12 @@ p6df::modules::macosx::home::symlinks() {
 
   p6_return_void
 }
+######################################################################
+#<
+#
+# Function: p6df::modules::macosx::external::brews()
+#
+#>
 ######################################################################
 p6df::modules::macosx::external::brews() {
 
@@ -78,6 +114,12 @@ p6df::modules::macosx::external::brews() {
 }
 
 ######################################################################
+#<
+#
+# Function: p6df::modules::macosx::langs()
+#
+#>
+######################################################################
 p6df::modules::macosx::langs() {
 
   uv pip install iterm2
@@ -85,45 +127,3 @@ p6df::modules::macosx::langs() {
   p6_return_void
 }
 
-######################################################################
-#<
-#
-# Function: p6df::modules::macosx::deps()
-#
-#>
-######################################################################
-#<
-#
-# Function: p6df::modules::macosx::external::brews()
-#
-#>
-######################################################################
-#<
-#
-# Function: p6df::modules::macosx::langs()
-#
-#>
-######################################################################
-#<
-#
-# Function: p6df::modules::macosx::path::init()
-#
-#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
-#>
-######################################################################
-#<
-#
-# Function: p6df::modules::macosx::init(_module, dir)
-#
-#  Args:
-#	_module -
-#	dir -
-#
-#>
-######################################################################
-#<
-#
-# Function: p6df::modules::macosx::home::symlinks()
-#
-#  Environment:	 HOME P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
-#>
