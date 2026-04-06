@@ -37,7 +37,11 @@ p6df::modules::macosx::init() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::macosx::path::init()
+# Function: p6df::modules::macosx::path::init(_module, _dir)
+#
+#  Args:
+#	_module -
+#	_dir -
 #
 #  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
